@@ -1,0 +1,42 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Academico</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estudiante.css' %}">
+</head>
+<body>
+  <h1>Lista Estudiantil</h1>
+	    <div class="container">
+		      <h3>Registrar</h3>
+			  <h4>Datos personales</h4>
+			   <fieldset>
+				   <label for="name">Codigo:</label>
+                    <input type="number" id="Codigo" name="codigo">
+               </fieldset>
+			   <fieldset>
+			      <label for="name">ApellidoPaterno :</label>
+                    <input type="text" id="Apepaterno" name="apepaterno">
+				</fieldset>
+				  <label for="name">ApellidoMaterno :</label>
+                    <input type="text" id="ApeMaterno" name="apematerno">
+				</fieldset>
+				<fieldset>
+					<label for="name">Nombre :</label>
+                    <input type="text" id="name" name="user_name">
+				</fieldset>
+				<fieldset>
+			    <form action="https://example.com">
+					<label>
+						 FechaNacimiento :
+						<input type="date" name="number"/>
+					</label>
+				</fieldset>
+				<fieldset>
+				   <button type="submit" id="contact-submit"
+				   data-submit="...Sending">Registrar</button>
+				</fieldset>
+			</form>
+		 </div>
+</body>
+</html>

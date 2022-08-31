@@ -1,0 +1,31 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/matricula.css' %}">
+</head>
+<body>
+  <h1> Curso</h1>
+	    <div class="container">
+		      <h3>Registrar Curso</h3>
+			   <fieldset>
+				   <label for="name">Codigo:</label>
+                    <input type="number" id="Codigo" name="codigo">
+               </fieldset>
+			   <fieldset>
+			      <label for="name">Nombre Estudiante :</label>
+                    <input type="text" id="Nombre" name="nombre">
+				</fieldset>
+				<fieldset>
+					<label for="name">Docente :</label>
+                    <input type="text" id="name" name="user_name">
+				</fieldset>
+				<fieldset>
+				   <button type="submit" id="contact-submit"
+				   data-submit="...Sending">Guardar</button>
+				</fieldset>
+			</form>
+		 </div>
+</body>
+</html>
