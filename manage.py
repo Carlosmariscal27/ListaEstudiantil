@@ -3,7 +3,6 @@
 import os
 import sys
 
-
 def main() -> object:
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'ListaEstudiantil.settings')
