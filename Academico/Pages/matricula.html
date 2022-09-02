@@ -2,46 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Matricula</title>
-    <link rel="stylesheet" type="text/css" href="{'% static'css/matricula.css' %}">
+    <title>Academico</title>
+    <link rel="stylesheet" type="text/css" href="#">
 </head>
 <body>
   <h1>Matricula Estudiantil </h1>
 	    <div class="container">
+			<form method="post">
+				{% csrf_token %}
 		      <h3>Registrar</h3>
 			  <h4>Datos personales</h4>
 			   <fieldset>
-				   <label for="name">Cedula:</label>
-                    <input type="number" id="Cedula" name="cedula">
+				    <label for="name">Cedula:</label>
+                    <input type="number" id="cedula" name="cedula">
                </fieldset>
 			   <fieldset>
-					<label for="name">Estudiante :</label>
-                    <input type="text" id="name" name="user_name">
+					<label for="name">Estudiante:</label>
+                    <input type="text" id="name" name="nombre">
 				</fieldset>
 			   <fieldset>
-			      <label for="name">ApellidoPaterno :</label>
-                    <input type="text" id="Apepaterno" name="apepaterno">
+			        <label for="name">ApellidoPaterno:</label>
+                    <input type="text" id="Apellidopaterno" name="apellidopaterno">
 				</fieldset>
-				  <label for="name">ApellidoMaterno :</label>
-                    <input type="text" id="ApeMaterno" name="apematerno">
+				    <label for="name">ApellidoMaterno:</label>
+                    <input type="text" id="Apellidomaterno" name="apellidomaterno">
 				</fieldset>
 			    <fieldset>
-					<label for="name">Curso :</label>
+					<label for="name">Curso:</label>
                     <input type="text" id="Curso" name="curso">
 				</fieldset>
 				<fieldset>
 			    <form action="https://example.com">
-					<label>
-						 FechaMatricula :
-						<input type="date" name="number"/>
-					</label>
+					<label for="name">Fecha:</label>
+					<input type="date" name="fecha"/>
+				</form>
 				</fieldset>
 				<fieldset>
 				   <button type="submit" id="contact-submit"
 				   data-submit="...Sending">Registrar</button>
 				</fieldset>
+			<a href="{% url 'menu' %}"></a>
 			</form>
 		 </div>
-         <img src="/ListaEstudiantil/Academico/static/img/fondo.jpng.webp" width="100%">
+         <img src="#">
 </body>
 </html>

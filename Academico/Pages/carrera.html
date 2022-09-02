@@ -2,32 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Carrera Academica</title>
-    <link rel="stylesheet" type="text/css" href="{% static'css/matricula.css' %}">
+    <title>Academico</title>
+    <link rel="stylesheet" type="text/css" href="#">
 </head>
 <body>
   <h1>Seleccionar Carrera</h1>
 	    <div class="container">
+			<form method="post">
+				{% csrf_token %}
 		      <h3>Registrar</h3>
 			   <fieldset>
-				   <label for="name">Codigo Carrera:</label>
-                    <input type="number" id="CodigoCarrera" name="codigocarrera">
+				   <label for="name">Codigo:</label>
+                    <input type="number" id="number" name="code">
                </fieldset>
 			   <fieldset>
-			      <label for="name">Nombre Carrera :</label>
-                    <input type="text" id="Carrera" name="carrera">
+			      <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="carrera">
 				</fieldset>
 				<fieldset>
-					<label for="name">Duracion Carrera :</label>
-                    <input type="number" id="name" name="number">
+					<label for="name">Duración:</label>
+                    <input type="number" id="date" name="duracion">
 				</fieldset>
 				<fieldset>
 				   <button type="submit" id="contact-submit"
 				   data-submit="...Sending">Registrar</button>
 				</fieldset>
-			<a href="stylesheet" href="pages/menu.html"></a>
+			<a href="{% url 'menu' %}"></a>
 			</form>
 		 </div>
-         <img src="/ListaEstudiantil/Academico/static/img/fondo.jpng.webp" width="100%">
+         <img src="#">
 </body>
 </html>

@@ -1,23 +1,25 @@
+{% load static %}
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="/ListaEstudiantil/Academico/static/css/menu.css">
+    <link rel="stylesheet" type="text/css" href="#">
     <meta charset="UTF-8">
     <title>Menu</title>
 </head>
 <body>
+   <div class="contenedor"></div>
    <h1>Menu Academico</h1>
    <nav>
-       <a href="Carrera.html">Carrera</a>
-       <a href="Estudiante.html">Estudiante</a>
-       <a href="Curso.html">Curso</a>
-       <a href="Matricula.html">Matricula</a>
+       <a href="{% url 'carrera' %}">Carrera</a>
+       <a href="{% url 'estudiante' %}">Estudiante</a>
+       <a href="{% url 'curso' %}">Curso</a>
+       <a href="{% url 'matricula' %}">Matricula</a>
 
-<p>
-    Hecho por <by>Carlos Mariscal</by>
+
+    <img src="#">
+       <p>
+           Por <span> Carlos Mariscal</span>
     <div class="animation start-home"></div>
-
-</p>
-    <img src="/ListaEstudiantil/Academico/static/img/fondo.jpng.webp" width="100%">
+       </p>
    </nav>
 </body>
 </html>
