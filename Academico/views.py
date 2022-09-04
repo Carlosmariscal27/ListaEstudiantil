@@ -26,13 +26,13 @@ class Estudiante(CreateView):
 
 class Curso(CreateView):
     model = Curso
-    fields = ['codigo', 'nombre', 'docente']
+    fields = ['codigo', 'estudiante', 'docente']
     template_name = 'curso.html'
     success_url = reverse_lazy("menu")
 
 
 class Matricula(CreateView):
     model = Matricula
-    fields = ['cedula', 'estudiante', 'field_name', 'field_name2', 'curso', 'fecha']
+    fields = ['cedula', 'apellidos', 'carrera', 'curso', 'nombre',]
     template_name = 'matricula.html'
     success_url = reverse_lazy("menu")

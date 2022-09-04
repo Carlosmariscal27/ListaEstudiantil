@@ -22,7 +22,7 @@ class Estudiante(models.Model):
 
 class Curso(models.Model):
     codigo = models.CharField(max_length=5, primary_key=True)
-    estudiante = models.CharField(max_length=40)
+    estudiante = models.ForeignKey(Estudiante , on_delete=models.CASCADE)
     docente = models.CharField(max_length=50)
     class Meta:
         db_table = 'curso'
