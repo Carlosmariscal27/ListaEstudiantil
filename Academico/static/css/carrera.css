@@ -1,22 +1,33 @@
 *{
-  margin: 0;
-  padding: 0;
+  margin: 10;
+  padding: 10;
 }
 h1 {
-  color: white;
-  background-color: #46209e;
   text-align: center;
+  color: black;
 }
-h3 {
-  background-color: #46209e;
+div {
+  color: black;
+  text-align: left;
+}
+h2 {
   text-align: center;
-  color: white;
 }
 fieldset {
-  color: white;
-  background-color: #46209e;
-  width: 10%;
-}
-fielset input {
+  text-color: blue;
   text-align: center;
+  color: #24a7f2;
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+  text-decoration: line;
+  font-size: 20px;
+  padding: 18px;
+  background-color: #46209e;
+}
+nav a:hover {
+  color: #fab52a;
+}
+p {
+  color: blue;
 }

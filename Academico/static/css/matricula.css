@@ -1,3 +1,42 @@
 *{
-
+  margin: 10;
+  padding: 10;
+}
+div {
+  color: black;
+  text-align: left;
+}
+h1 {
+  text-align: center;
+  color: black;
+}
+h2 {
+  text-align: center;
+  color: black;
+}
+h3 {
+  text-align: center;
+  color: black;
+}
+h4 {
+  text-align: center;
+  color: center;
+}
+fieldset {
+  text-color: blue;
+  text-align: center;
+  color: #24a7f2;
+  font-size: x-large;
+  color: white;
+  font-weight: bold;
+  text-decoration: line;
+  font-size: 20px;
+  padding: 18px;
+  background-color: #46209e;
+}
+nav a:hover {
+  color: #fab52a;
+}
+p {
+  color: blue;
 }
