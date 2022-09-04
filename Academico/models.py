@@ -21,9 +21,9 @@ class Estudiante(models.Model):
 
 
 class Curso(models.Model):
-    codigoclase = models.CharField(max_length=5, primary_key=True)
-    nombreEstudiante = models.CharField(max_length=40)
-    nombreDocente = models.CharField(max_length=50)
+    codigo = models.CharField(max_length=5, primary_key=True)
+    estudiante = models.CharField(max_length=40)
+    docente = models.CharField(max_length=50)
     class Meta:
         db_table = 'curso'
 
