@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Academico</title>
-    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
 </head>
 <body>
   <h1>Matricula Estudiantil </h1>
@@ -18,18 +18,18 @@
                </fieldset>
 			   <fieldset>
 					<label for="name">Estudiante:</label>
-                    <input type="text" id="name" name="nombre">
+                    <input type="text" id="name" name="estudiante">
 				</fieldset>
 			   <fieldset>
-			        <label for="name">ApellidoPaterno:</label>
-                    <input type="text" id="Apellidopaterno" name="apellidopaterno">
+			        <label for="name">Apellido Paterno:</label>
+                    <input type="text" id="apellidopaterno" name="field_name">
 				</fieldset>
-				    <label for="name">ApellidoMaterno:</label>
-                    <input type="text" id="Apellidomaterno" name="apellidomaterno">
+				    <label for="name">Apellido Materno:</label>
+                    <input type="text" id="apellidomaterno" name="field_name2">
 				</fieldset>
 			    <fieldset>
 					<label for="name">Curso:</label>
-                    <input type="text" id="Curso" name="curso">
+                    <input type="text" id="curso" name="curso">
 				</fieldset>
 				<fieldset>
 			    <form action="https://example.com">
@@ -44,6 +44,6 @@
 			<a href="{% url 'menu' %}"></a>
 			</form>
 		 </div>
-         <img src="#">
+         <img src="{% static 'img/fondo.astract.webp' %}" width="100%" height="100%">
 </body>
 </html>

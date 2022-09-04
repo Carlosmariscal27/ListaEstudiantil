@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Academico</title>
-    <link rel="stylesheet" type="text/css" href="#">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
 </head>
 <body>
         <h1>Lista Estudiantil</h1>
@@ -12,37 +12,33 @@
 				{% csrf_token %}
 		      <h3>Registrar</h3>
 			  <h4>Datos personales</h4>
-			   <fieldset>
+				<fieldset>
 				   <label for="name">Cedula:</label>
-                    <input type="number" id="cedula" name="cedula">
+                    <input type="number" id="name" name="cedula">
                </fieldset>
 			   <fieldset>
-			      <label for="name">ApellidoPaterno:</label>
-                    <input type="text" id="Apellidopaterno" name="apellidopaterno">
+			      <label for="name">Apellidos:</label>
+                    <input type="text" id="apellidop" name="ApellidoP" class="apellidos">
 				</fieldset>
 				<fieldset>
-				  <label for="name">Segundo Apellido:</label>
-                    <input type="text" id="Apellidomaterno" name="apellidomaterno">
-				</fieldset>
-				<fieldset>
-					<label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name">
+					<label for="name">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres">
 				</fieldset>
 				<fieldset>
 					<label for="name">Genero:</label>
-					<input type="text" id="genero" name="genero" >
+                    <input type="tel" id="genero" name="genero">
 				</fieldset>
 				<fieldset>
 					<label for="name">Carrera:</label>
-					<input type="text" id="Carrera" name="carrera">
+                    <input type="text" id="carrera" name="carrera">
 				</fieldset>
 				<fieldset>
 				   <button type="submit" id="contact-submit"
 				   data-submit="...Sending">Registrar</button>
+					<a href="{% url 'menu' %}"></a>
 				</fieldset>
-			<a href="{% url 'menu' %}"></a>
 			</form>
 		 </div>
-         <img src="#">
+         <img src="{% static 'img/fondo.astract.webp' %}" width="100%" height="100%">
 </body>
 </html>

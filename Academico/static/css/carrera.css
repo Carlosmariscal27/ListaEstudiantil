@@ -1,20 +1,22 @@
-* {
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	-moz-box-sizing:border-box;
-	-webkit-font-smoothing:antialiased;
-	-moz-font-smoothing:antialiased;
-	-o-font-smoothing:antialiased;
-	font-smoothing:antialiased;
-	text-rendering:optimizeLegibility;
+*{
+  margin: 0;
+  padding: 0;
 }
-body {
-	font-family:"Open Sans", Helvetica, Arial, sans-serif;
-	font-weight:300;
-	font-size: 12px;
-	line-height:30px;
-	color:#777;
-	background:#0CF;
+h1 {
+  color: white;
+  background-color: #46209e;
+  text-align: center;
+}
+h3 {
+  background-color: #46209e;
+  text-align: center;
+  color: white;
+}
+fieldset {
+  color: white;
+  background-color: #46209e;
+  width: 10%;
+}
+fielset input {
+  text-align: center;
 }

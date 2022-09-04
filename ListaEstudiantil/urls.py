@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', Menu.as_view(), name="menu"),
     path('carrera/', Carrera.as_view(), name="carrera"),
-    path('estudiante/', Estudiante.as_view(), name="estudiante"),
-    path('curso/', Curso.as_view(), name="curso"),
+    path('estudiante/', Curso.as_view(), name="curso"),
+    path('curso/', Estudiante.as_view(), name="estudiante"),
     path('matricula/', Matricula.as_view(), name="matricula"),
 ]

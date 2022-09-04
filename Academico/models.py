@@ -12,9 +12,8 @@ class Carrera(models.Model):
 
 class Estudiante(models.Model):
     cedula = models.CharField(max_length=10, primary_key=True)
-    ApellidoPaterno = models.CharField(max_length=40)
-    ApellidoMaterno = models.CharField(max_length=40)
-    nombre = models.CharField(max_length=40)
+    apellidos = models.CharField(max_length=40)
+    nombres = models.CharField(max_length=40)
     genero = models.CharField(max_length=10)
     carrera = models.ForeignKey(Carrera, on_delete=models.CASCADE)
     class Meta:
@@ -31,9 +30,9 @@ class Curso(models.Model):
 
 class Matricula(models.Model):
     cedula = models.CharField(max_length=10, primary_key=True)
-    estudiante = models.ForeignKey(Estudiante, on_delete=models.CASCADE)
-    apellidoPaterno = models.CharField(max_length=40)
-    apellidoMaterno = models.CharField(max_length=40)
+    nombre = models.ForeignKey(Estudiante, on_delete=models.CASCADE)
+    apellidos = models.CharField(max_length=40)
     curso = models.ForeignKey(Curso, on_delete=models.CASCADE)
+    carrera = models.ForeignKey(Carrera, on_delete=models.CASCADE)
     class Meta:
         db_table = 'matricula'
