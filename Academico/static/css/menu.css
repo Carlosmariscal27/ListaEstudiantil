@@ -4,19 +4,12 @@
 }
 h1 {
   text-align: center;
-  color: black;
-  background: color black;
+  color: white;
+  background-color: white;
 }
 nav {
   text-color: blue;
   text-align: center;
-  color: #24a7f2;
-  font-size: x-large;
-  color: white;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 20px;
-  padding: 18px;
 }
 nav a:hover {
   color: #fab52a;
@@ -24,4 +17,3 @@ nav a:hover {
 p {
   color: blue;
 }
-

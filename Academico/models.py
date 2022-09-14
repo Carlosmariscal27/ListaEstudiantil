@@ -1,6 +1,5 @@
 from django.db import models
 
-
 # Create your models here.
 class Carrera(models.Model):
     codigo = models.CharField(max_length=10, primary_key=True)
@@ -36,3 +35,5 @@ class Matricula(models.Model):
     carrera = models.ForeignKey(Carrera, on_delete=models.CASCADE)
     class Meta:
         db_table = 'matricula'
+
+

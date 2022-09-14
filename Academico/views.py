@@ -36,3 +36,4 @@ class Matricula(CreateView):
     fields = ['cedula', 'apellidos', 'carrera', 'curso', 'nombre',]
     template_name = 'matricula.html'
     success_url = reverse_lazy("menu")
+
