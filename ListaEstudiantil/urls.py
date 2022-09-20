@@ -19,7 +19,8 @@ from Academico.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', Menu.as_view(), name="menu"),
+    path('', login, name="login"),
+    path('menu/', Menu_P.as_view(), name="menu"),
     path('carrera/', Carrera.as_view(), name="carrera"),
     path('estudiante/', Curso.as_view(), name="curso"),
     path('curso/', Estudiante.as_view(), name="estudiante"),

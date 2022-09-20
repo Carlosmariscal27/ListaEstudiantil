@@ -1,0 +1,22 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="{% static 'css/login.css' %}">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <title>Login</title>
+</head>
+<body>
+   <div class="login">
+   <h1>Iniciar Sesión</h1>
+    <form method="POST">
+          {% csrf_token %}
+    	<input type="text" name="user" placeholder="Username" required="required">
+        <input type="password" name="password" placeholder="Password" required="required">
+        <button type="submit">Ingresar</button>
+    </form>
+   </form>
+   </div>
+</body>
+</html>

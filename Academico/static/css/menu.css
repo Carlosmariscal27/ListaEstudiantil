@@ -1,19 +1,7 @@
-*{
-  margin: 10;
-  padding: 10;
+* {
+	padding: 0;
+	margin: 0;
+	font-family: Helvetica;
 }
-h1 {
-  text-align: center;
-  color: white;
-  background-color: black;
-}
-nav {
-  text-color: blue;
-  text-align: center;
-}
-nav a:hover {
-  color: #fab52a;
-}
-p {
-  color: blue;
-}
+
+

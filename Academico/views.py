@@ -4,9 +4,9 @@ from django.views.generic.edit import CreateView
 from django.views.generic import TemplateView
 from Academico.models import *
 from django.urls import reverse_lazy
+from Academico.archivos.archivo import *
 
-
-class Menu(TemplateView):
+class Menu_P(TemplateView):
     template_name = 'menu.html'
 
 
@@ -36,4 +36,24 @@ class Matricula(CreateView):
     fields = ['cedula', 'apellidos', 'carrera', 'curso', 'nombre',]
     template_name = 'matricula.html'
     success_url = reverse_lazy("menu")
+
+
+def login(request):
+    ruta = "C:\ListaEstudiantil\datos.txt"
+    usu = request.POST.get('user')
+    pas = request.POST.get('password')
+    arch = Archivo()
+    obj = arch.getLogin(usu, pas, ruta)
+    if obj is None:
+        return render(request, "login.html")
+    else :
+        if obj.usuario == usu:
+            return render(request, "menu.html")
+
+
+
+
+
+
+
 

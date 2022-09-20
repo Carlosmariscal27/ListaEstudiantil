@@ -123,9 +123,11 @@ USE_TZ = True
 # Static files (css, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = '/static/'
+STATIC_URL = 'Academico/static/'
 
 STATICFILES_DIR = (os.path.join(BASE_DIR, 'Academico/static'),)
+
+LOGIN_REDIRECT_URL = '/Academico/pages/menu'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
