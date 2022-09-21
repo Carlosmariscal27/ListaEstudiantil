@@ -9,7 +9,7 @@
   <div class="container">PROGRAMACION VISUAL 3F</div>
   <h1>Matricula Estudiantil </h1>
 	    <div class="container">
-			<form method="post">
+			<form method="POST" id="contact">
 				{% csrf_token %}
 		      <h3>Registrar</h3>
 			  <h4>Datos personales</h4>
@@ -35,9 +35,8 @@
 				</fieldset>
 				<fieldset>
 				   <button type="submit" id="contact-submit"
-				   data-submit="...Sending">Registrar</button>
+				   data-submit="...Sending">Consultar</button>
 				</fieldset>
-			<a href="{% url 'menu' %}"></a>
 			</form>
 		 </div>
 </body>

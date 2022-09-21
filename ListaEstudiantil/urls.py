@@ -20,9 +20,12 @@ from Academico.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', login, name="login"),
-    path('menu/', Menu_P.as_view(), name="menu"),
+    path('manu/', Menu_P.as_view(), name="menu"),
+    path('lista/', ListaMatricula.as_view(), name="lista"),
     path('carrera/', Carrera.as_view(), name="carrera"),
     path('estudiante/', Curso.as_view(), name="curso"),
     path('curso/', Estudiante.as_view(), name="estudiante"),
     path('matricula/', Matricula.as_view(), name="matricula"),
+    path('consultar/<int:pk>/',  ModificarMatricula.as_view(), name='consultar'),
+    path('eliminar/<int:pk>/', DeleteMatricula.as_view(), name='eliminar'),
 ]

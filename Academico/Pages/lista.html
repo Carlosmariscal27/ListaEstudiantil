@@ -1,0 +1,43 @@
+{% load static %}
+<html>
+<head>
+    <title>Tabla</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lista.css' %}">
+
+</head>
+<body>
+
+<form  method="POST">
+    <div class="contenedor-filtro">
+        <a href="{% url 'menu' %}">About</a>
+    </div>
+</form>
+    <table id="tab">
+        <thead>
+        <tr>
+            <td>Estudiante</td>
+            <td class="columnaN">CEDULA</td>
+            <td class="columnaN">APELLIDOS</td>
+            <td class="columnaN">CARRERA</td>
+            <td class="columnaN">CURSO</td>
+            <td class="columnaN">NOMBRE</td>
+        </tr>
+        </thead>
+        <tbody>
+        {% for contact in object_list %}
+        <tr>
+            <td>{{contact.cedula.apellidos}}</td>
+            <td>{{contact.matricula}}</td>
+            <td class="filaN">{{contact.precio}}</td>
+            <td class="filaN">{{contact.cantidad}}</td>
+            <td class="filaN">{{contact.subtotal}}</td>
+            <td class="filaN">{{contact.iva}}</td>
+            <td class="filaN">{{contact.total}}</td>
+            <td> <a href="{% url 'consulta' contact.id %}">Modificar</a></td>
+            <td> <a href="{% url 'eliminar' contact.id %}">Eliminar</a></td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

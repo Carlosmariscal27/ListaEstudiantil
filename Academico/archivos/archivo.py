@@ -1,6 +1,5 @@
 from Academico.dominion.entidades import *
 
-
 class Archivo:
 
     def getAllUsers(self, ruta):

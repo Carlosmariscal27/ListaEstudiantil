@@ -6,39 +6,40 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/matricula.css' %}">
 </head>
 <body>
-  <div class="container">PROGRAMACION VISUAL 3F</div>
+  <div class="container">
   <h1>Matricula Estudiantil </h1>
 	    <div class="container">
-			<form method="post">
+			<form method="POST" id="contact">
 				{% csrf_token %}
-		      <h3>Registrar</h3>
-			  <h4>Datos personales</h4>
+		      <h3>Eliminar</h3>
+			  <h4>Datos</h4>
 			   <fieldset>
 				    <label for="name">Cedula:</label>
-                    <input type="number" id="cedula" name="cedula">
+                    <input type="number" id="cedula" name="cedula" value="{{ object.cedula }}" required>
                </fieldset>
 			   <fieldset>
 					<label for="name">Apellidos:</label>
-                    <input type="text" id="name" name="apellidos">
+                    <input type="text" id="name" name="apellidos" value="{{ object.apellidos }}" required>
 				</fieldset>
 			   <fieldset>
 			        <label for="name">Carrera:</label>
-                    <input type="text" id="carrera" name="carrera">
+                    <input type="text" id="carrera" name="carrera" value="{{ object.carrera }}" required>
 				</fieldset>
 				<fieldset>
 				    <label for="name">Curso:</label>
-                    <input type="text" id="curso" name="curso">
+                    <input type="text" id="curso" name="curso" value="{{ object.curso }}" required>
 				</fieldset>
 			    <fieldset>
 					<label for="name">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre">
+                    <input type="text" id="nombre" name="nombre" value="{{ object.nombre }}" required>
 				</fieldset>
 				<fieldset>
+					<h5>Desea eliminar {{ object.matricula }}</h5>
 				   <button type="submit" id="contact-submit"
-				   data-submit="...Sending">Registrar</button>
+				   data-submit="...Sending">Eliminar</button>
 				</fieldset>
-			<a href="{% url 'menu' %}"></a>
 			</form>
 		 </div>
+  </div>
 </body>
 </html>

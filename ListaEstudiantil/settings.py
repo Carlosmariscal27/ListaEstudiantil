@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 from pathlib import Path
 import os
-import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -127,7 +126,7 @@ STATIC_URL = 'Academico/static/'
 
 STATICFILES_DIR = (os.path.join(BASE_DIR, 'Academico/static'),)
 
-LOGIN_REDIRECT_URL = '/Academico/pages/menu'
+LOGIN_REDIRECT_URL = '/Academico/Pages/menu'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
