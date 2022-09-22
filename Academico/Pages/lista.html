@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Tabla</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/lista.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/estilo1.css' %}">
 
 </head>
 <body>
@@ -16,25 +16,30 @@
         <thead>
         <tr>
             <td>Estudiante</td>
-            <td class="columnaN">CEDULA</td>
-            <td class="columnaN">APELLIDOS</td>
-            <td class="columnaN">CARRERA</td>
-            <td class="columnaN">CURSO</td>
-            <td class="columnaN">NOMBRE</td>
+            <td class="columnaN">Cedula</td>
+            <td class="columnaN">Apellidos</td>
+            <td class="columnaN">Nombres</td>
+            <td class="columnaN">Genero</td>
+            <td class="columnaN">Carrera</td>
+            <td class="columnaN">OPCION</td>
         </tr>
         </thead>
         <tbody>
         {% for contact in object_list %}
         <tr>
-            <td>{{contact.cedula.apellidos}}</td>
-            <td>{{contact.matricula}}</td>
-            <td class="filaN">{{contact.precio}}</td>
-            <td class="filaN">{{contact.cantidad}}</td>
-            <td class="filaN">{{contact.subtotal}}</td>
-            <td class="filaN">{{contact.iva}}</td>
-            <td class="filaN">{{contact.total}}</td>
-            <td> <a href="{% url 'consulta' contact.id %}">Modificar</a></td>
-            <td> <a href="{% url 'eliminar' contact.id %}">Eliminar</a></td>
+            <td>{{contact.cedula.nombre}} {{contact.cedula.apellido}}</td>
+            <td>{{contact.producto}}</td>
+            <td class="filaN">{{contact.cedula}}</td>
+            <td class="filaN">{{contact.apellidos}}</td>
+            <td class="filaN">{{contact.nombres}}</td>
+            <td class="filaN">{{contact.genero}}</td>
+            <td class="filaN">{{contact.carrera}}</td>
+            <td>
+                <a href="{% url 'consulta' contact.id %}">Modificar</a>
+            </td>
+            <td>
+                <a href="{% url 'eliminar' contact.id %}">Eliminar</a>
+            </td>
         </tr>
         {% endfor %}
         </tbody>

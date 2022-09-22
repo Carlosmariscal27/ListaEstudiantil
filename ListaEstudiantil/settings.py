@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+STATICFILES_DIRS = ['C:/ListaEstudiantil/Academico/static']
 # Application definition
 
 INSTALLED_APPS = [

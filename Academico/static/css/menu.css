@@ -4,4 +4,10 @@
 	font-family: Helvetica;
 }
 
-
+body {
+    background-color: #ccffff;
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+	font-family: Arial;
+}

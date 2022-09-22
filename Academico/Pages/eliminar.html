@@ -11,32 +11,32 @@
 	    <div class="container">
 			<form method="POST" id="contact">
 				{% csrf_token %}
-		      <h3>Eliminar</h3>
-			  <h4>Datos</h4>
-			   <fieldset>
-				    <label for="name">Cedula:</label>
-                    <input type="number" id="cedula" name="cedula" value="{{ object.cedula }}" required>
+		      <h2>Eliminar</h2>
+			  <h3>Datos</h3>
+				<fieldset>
+				   <label for="name">Cedula:</label>
+                    <input type="number" id="name" name="cedula" value="{{ object.cedula }}">
                </fieldset>
 			   <fieldset>
-					<label for="name">Apellidos:</label>
-                    <input type="text" id="name" name="apellidos" value="{{ object.apellidos }}" required>
-				</fieldset>
-			   <fieldset>
-			        <label for="name">Carrera:</label>
-                    <input type="text" id="carrera" name="carrera" value="{{ object.carrera }}" required>
+			      <label for="name">Apellidos:</label>
+                    <input type="text" id="apellidos" name="Apellidos" class="apellidos" value="{{ object.apellidos }}">
 				</fieldset>
 				<fieldset>
-				    <label for="name">Curso:</label>
-                    <input type="text" id="curso" name="curso" value="{{ object.curso }}" required>
-				</fieldset>
-			    <fieldset>
-					<label for="name">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" value="{{ object.nombre }}" required>
+					<label for="name">Nombres:</label>
+                    <input type="text" id="nombres" name="nombres" value="{{ object.nombres }}">
 				</fieldset>
 				<fieldset>
-					<h5>Desea eliminar {{ object.matricula }}</h5>
+					<label for="name">Genero:</label>
+                    <input type="tel" id="genero" name="genero" value="{{ object.genero }}">
+				</fieldset>
+				<fieldset>
+					<label for="name">Carrera:</label>
+                    <input type="text" id="carrera" name="carrera" value="{{ object.carrera }}">
+				</fieldset>
+					<h4>Desea eliminar {{ object.estudiante }}</h4>
 				   <button type="submit" id="contact-submit"
 				   data-submit="...Sending">Eliminar</button>
+				   <a href="{% url 'menu' %}"></a>
 				</fieldset>
 			</form>
 		 </div>
