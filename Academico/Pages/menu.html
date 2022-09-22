@@ -1,13 +1,12 @@
 {% load static %}
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/menu.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
     <meta charset="UTF-8">
     <title>Menu</title>
 </head>
 <body>
    <div class="container"></div>
-   <p class="text">PROGRAMACION VISUAL 3F><p/>
    <h1>Menu Academico</h1>
    <nav>
        <a href="{% url 'carrera' %}">Carrera</a>
@@ -17,10 +16,9 @@
        <a href="{% url 'lista' %}">Lista</a>
        
 
-       <p2>
-           Por <span> Carlos Mariscal</span>
+       <p1>
     <div class="animation start-home"></div>
-       </p2>
+       </p1>
    </nav>
 </body>
 </html>

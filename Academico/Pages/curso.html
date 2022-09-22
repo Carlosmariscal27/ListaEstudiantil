@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Academico</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/curso.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/color2.css' %}">
 </head>
 <body>
-  <div class="logo logo-main">PROGRAMACION VISUAL 3F</div>
   <h1> Curso</h1>
 	    <div class="container">
 			<form method="POST">
 				{% csrf_token %}
-		      <h3>Registrar Curso</h3>
+		      <h2>Registrar Curso</h2>
 			   <fieldset>
 				   <label for="name">Codigo:</label>
                     <input type="number" id="codigo" name="codigo">
