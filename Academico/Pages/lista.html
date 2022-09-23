@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Tabla</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/lista1.css' %}">
 
 </head>
 <body>
@@ -27,15 +27,14 @@
         <tbody>
         {% for contact in object_list %}
         <tr>
-            <td>{{contact.cedula.nombre}} {{contact.cedula.apellido}}</td>
-            <td>{{contact.producto}}</td>
-            <td class="filaN">{{contact.cedula}}</td>
+            <td>{{contact.estudiante}}</td>
+            <td>{{contact.cedula}}</td>
             <td class="filaN">{{contact.apellidos}}</td>
             <td class="filaN">{{contact.nombres}}</td>
             <td class="filaN">{{contact.genero}}</td>
-            <td class="filaN">{{contact.carrera}}</td>
+            <td class="filaN">{{contact.carrera.estudiante}}</td>
             <td>
-                <a href="{% url 'consulta' contact.id %}">Modificar</a>
+                <a href="{% url 'consultar' contact.id %}">Modificar</a>
             </td>
             <td>
                 <a href="{% url 'eliminar' contact.id %}">Eliminar</a>

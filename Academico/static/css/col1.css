@@ -1,32 +1,24 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-font-smoothing:antialiased;
+	-moz-font-smoothing:antialiased;
+	-o-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	text-rendering:optimizeLegibility;
+}
 nav {
 	margin: 27px auto 0;
 	position: relative;
-	width: 590px;
+	width: 50px;
 	height: 50px;
 	border-radius: 8px;
 	font-size: 0;
 }
-nav a {
-	line-height: 50px;
-	height: 100%;
-	font-size: 15px;
-	display: inline-block;
-	position: center;
-	z-index: 1;
-	text-decoration: none;
-	text-transform: uppercase;
-	text-align: center;
-	color: white;
-	cursor: pointer;
-}
-nav .animation {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	z-index: 0;
-	transition: all .5s ease 0s;
-	border-radius: 8px;
-}
+
 h2{
     text-align: center;
     color: #fff;
@@ -36,11 +28,16 @@ fieldset {
 	font-weight: 500;
 	color: #fff;
 	margin-bottom: 25px;
+	background-color: #fff;
 }
 body {
 	font-size: 12px;
 	font-family: sans-serif;
 	background: #68309a;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%, -49%);
 }
 h1 {
 	text-align: center;
@@ -52,13 +49,21 @@ h1 {
 	font-family: 'Cherry Swash', cursive;
 }
 h2 {
-   text-align: center;
-   color: #fff;
+    text-align: center;
+    color: #fff;
+}
+h3 {
+    text-align: center;
+    color: #fff;
+}
+h4 {
+    text-align: center;
+    color: #fff;
 }
 p {
     position: absolute;
     bottom: 20px;
-    width: 100%;
+    width: 20%;
     text-align: center;
     color: #ecf0f1;
     font-family: 'Cherry Swash',cursive;

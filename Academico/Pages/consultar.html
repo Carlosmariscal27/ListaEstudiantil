@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Academico</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/color4.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/col1.css' %}">
 </head>
 <body>
   <h1>Matricula Estudiantil </h1>
@@ -13,24 +13,19 @@
 		      <h3>Registrar</h3>
 			  <h4>Datos personales</h4>
 				<fieldset>
-				   <label for="name">Cedula:</label>
-                    <input type="number" id="name" name="cedula" value="{{ object.cedula.cedula }}">
+                    <input type="number" placeholder="Cedula" id="name" name="cedula" value="{{ object.cedula.cedula }}">
                </fieldset>
 			   <fieldset>
-			      <label for="name">Apellidos:</label>
-                    <input type="text" id="apellidos" name="Apellidos" class="apellidos" value="{{ object.apellidos }}">
+                    <input type="text" placeholder="Apellidos" id="apellidos" name="Apellidos" class="apellidos" value="{{ object.apellidos }}">
 				</fieldset>
 				<fieldset>
-					<label for="name">Nombres:</label>
-                    <input type="text" id="nombres" name="nombres" value="{{ object.nombres }}">
+                    <input type="text" placeholder="Nombres" id="nombres" name="nombres" value="{{ object.nombres }}">
 				</fieldset>
 				<fieldset>
-					<label for="name">Genero:</label>
-                    <input type="tel" id="genero" name="genero" value="{{ object.genero }}">
+                    <input type="tel" placeholder="Genero" id="genero" name="genero" value="{{ object.genero }}">
 				</fieldset>
 				<fieldset>
-					<label for="name">Carrera:</label>
-                    <input type="text" id="carrera" name="carrera" value="{{ object.carrera }}">
+                    <input type="text" placeholder="Carrera" id="carrera" name="carrera" value="{{ object.carrera }}">
 				</fieldset>
 				<fieldset>
 				   <button type="submit" id="contact-submit"

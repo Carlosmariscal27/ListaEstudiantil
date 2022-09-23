@@ -74,7 +74,7 @@ def login(request):
     arch = Archivo()
     obj = arch.getLogin(usu, pas, ruta)
     print(ruta, obj)
-    if obj == None:
+    if obj is None:
         return render(request, "login.html")
     else:
         if obj.usuario == usu:

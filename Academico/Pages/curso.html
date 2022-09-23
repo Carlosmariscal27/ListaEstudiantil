@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Academico</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/color2.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/col1.css' %}">
 </head>
 <body>
   <h1> Curso</h1>
@@ -12,16 +12,13 @@
 				{% csrf_token %}
 		      <h2>Registrar Curso</h2>
 			   <fieldset>
-				   <label for="name">Codigo:</label>
-                    <input type="number" id="codigo" name="codigo">
+                    <input type="number" placeholder="Codigo" id="codigo" name="codigo">
                </fieldset>
 				<fieldset>
-					<label for="name">Nombre Estudiante:</label>
-                    <input type="text" id="name" name="estudiante">
+                    <input type="text" placeholder="Nombre Estudiante" id="name" name="estudiante">
 				</fieldset>
 			   <fieldset>
-				    <label for="name">Nombre Docente:</label>
-				    <input type="text" id="docente" name="docente">
+				    <input type="text" placeholder="Nombre Docente" id="docente" name="docente">
 				</fieldset>
 				<fieldset>
 				   <button type="submit" id="contact-submit"
